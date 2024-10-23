@@ -1,0 +1,125 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #23272f;
+    color: white;
+  }
+  
+  h1 {
+    color: #ffffff;
+    text-align: center;
+    border-bottom: 1px solid #044663 ;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .tile {
+    color: black;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .box{
+    background-color: white;
+    margin: 5px;
+    border-radius: 10px;
+  }
+  
+  
+  
+  .x-hover:hover::after {
+    content: "X";
+    opacity: 0.4;
+    
+  }
+  
+  .o-hover:hover::after {
+    content: "O";
+    opacity: 0.4;
+  }
+  
+  .strike {
+    position: absolute;
+    background-color: rgb(247, 53, 28);
+  }
+  
+  .strike-row-1 {
+    width: 90%;
+    height: 4px;
+    top: 15%;
+    left: 5%;
+  }
+  .strike-row-2 {
+    width: 90%;
+    height: 4px;
+    top: 48%;
+    left: 5%;
+  }
+  .strike-row-3 {
+    width: 90%;
+    height: 4px;
+    top: 83%;
+    left: 5%;
+  }
+  .strike-column-1 {
+    height: 90%;
+    width: 4px;
+    left: 15%;
+    top: 5%;
+  }
+  .strike-column-2 {
+    height: 90%;
+    width: 4px;
+    left: 48%;
+    top: 5%;
+  }
+  .strike-column-3 {
+    height: 90%;
+    width: 4px;
+    left: 81%;
+    top: 5%;
+  }
+  .strike-diagonal-1 {
+    width: 90%;
+    height: 4px;
+    top: 50%;
+    left: 5%;
+    transform: skewY(45deg);
+  }
+  .strike-diagonal-2 {
+    width: 90%;
+    height: 4px;
+    top: 48%;
+    left: 5%;
+    transform: skewY(-45deg);
+  }
+  
+  .game-over {
+    text-align: center;
+    border:1px solid #5468ff ;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 50px;
+    font-size: 1.5em;
+  }
+  
+  .reset-button {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #0074a6;
+    border-radius: 20px;
+    color: white;
+    width: 100%;
+    font-size: 1.5em;
+  }
