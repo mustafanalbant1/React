@@ -1,0 +1,159 @@
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+body{
+  background-color: #000000;
+  display: grid;
+  grid-template-columns: auto 0px; 
+}
+
+.title{
+  color: white;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ana Konteyner */
+.note-container {
+  width: 200%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #03172c;
+}
+
+/* Textarea */
+.note-textarea {
+  width: 96%;
+  height: 150px;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+  background-color: #f1f1f1;
+  resize: vertical;
+  color: #333;
+}
+
+/* Butonların Dizilimi */
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Renk Butonları Konteyneri */
+.color-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Renk Butonları */
+.color-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.color-btn:hover {
+  opacity: 0.8;
+}
+
+/* Renkli Butonlar */
+.btn-blue { background-color: #0074e4; }
+.btn-red { background-color: #e61717; }
+.btn-purple { background-color: #a44ec3; }
+.btn-yellow { background-color: #c09731; }
+.btn-green { background-color: #1db954; }
+
+
+
+.add-note-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.add-note-btn:hover {
+  background-color: #47494b;
+}
+.filter-container{
+  width: 200%;
+  max-width: 640px;
+  margin: 20px auto;
+  padding: 10px 0px;
+  border-radius: 10px;
+  background-color: #03172c;
+  border: none;
+  display: flex ;
+  justify-content: space-between;
+}
+.search-input{
+  width: 98%;
+  background-color: transparent;
+  color: white;
+  border: none;
+  margin-left: 10px;
+  outline: none;
+}
+
+.search-icone{
+  height: 30px;
+  width: 30px;
+  color: white;
+  margin-right: 10px;
+}
+
+.note-list{
+  width: 30%;
+  margin: 20px auto;
+  padding: 10px 0px;
+  border-radius: 10px;
+  border: none;
+  display: flex ;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.note{
+  color: white;
+  width: 80%;
+  padding: 5px 10px;
+  flex-grow: 1
+}
+
+.edit-icon{
+  height: 30px;
+  width: 30px;
+  color: rgb(190, 171, 171);
+  margin-right: 10px;
+  background-color: whitesmoke;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.remove-icon{
+  height: 30px;
+  width: 30px;
+  color: rgb(231, 24, 24);
+  margin-right: 10px;
+  background-color: whitesmoke;
+  border-radius: 100%;
+  cursor: pointer;
+}
