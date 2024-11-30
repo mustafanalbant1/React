@@ -36,11 +36,10 @@ export const searchMovies = async (query: string) => {
       },
     });
 
-    return response.data.Search; // Arama sonuçlarını döndürüyoruz
+    return response.data.Search; 
   } catch (error) {
     console.error("Error fetching movies:", error);
-    return []; // Hata durumunda boş bir dizi döndürür
-  }
+    return []; 
 };
 
 // Film detaylarını getirme fonksiyonu
@@ -53,9 +52,9 @@ export const getMovieDetails = async (id: string) => {
       },
     });
 
-    return response.data; // Film detaylarını döndürüyoruz
+    return response.data; 
   } catch (error) {
     console.error("Error fetching movie details:", error);
-    return null; // Hata durumunda null döndürüyoruz
+    return null; 
   }
 };
